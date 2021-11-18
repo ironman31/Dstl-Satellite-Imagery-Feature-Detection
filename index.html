@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="image segementaion app">
+    <meta name="author" content="lokesh">
+    <title>Image Segmentation App</title>
+
+    <style>
+      body {
+        background-color: #fefe33;
+        font-family: 'Poppins';font-size: 22px;
+      }
+      .mb-4{ width: 700px; height: 600px; }
+      img{ object-fit: cover; }
+    </style>>
+  </head>
+
+  <body class="text-center">
+    <center>
+    <h1>Image Segmentation for Image Satelite Images: Lohit</h1>
+    <form method=post enctype=multipart/form-data>
+      <h1 >Upload the Test Image</h1>
+      <input type="file" id="image" name="image" class="form-control" required autofocus>
+      
+      <button type="submit">Predict</button>
+      <br>
+    </form>
+
+
+    <div>
+    {% if flag %}
+        <br>
+        <h3 class="h3 mb-3 font-weight-normal">Prediction : {{prediction_values}}</h3>
+        <br>
+        <img class="mb-4" src="/static/output_0.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_1.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_2.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_3.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_4.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_5.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_6.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_7.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_8.png" alt="" width="900" height="452">
+        <img class="mb-4" src="/static/output_9.png" alt="" width="900" height="452">
+      {% endif %}
+      <div>
+</html>
